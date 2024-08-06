@@ -5,8 +5,8 @@ baseTest("this works", async () => {
 });
 
 export const testFixture = baseTest.extend({
-  dummy({}, use) {
-    use("it works");
+  async dummy({}, use) {
+    await use("it works");
   },
 });
 
